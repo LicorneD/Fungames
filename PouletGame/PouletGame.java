@@ -35,5 +35,7 @@ class PouletGame {
 	Coc heros = new Coc(nom);
 	heros.LinkString();
 	}
+	Monstre renard = new Monstre(10, 10, "Renard");
+	renard.MonsterAppears();
    }
 }
