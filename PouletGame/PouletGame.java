@@ -35,7 +35,7 @@ class PouletGame {
 	Coc heros = new Coc(nom);
 	heros.LinkString();
 	}
-<<<<<<< HEAD
+
 	Renard r1 = new Renard("RenardzerVener");
 	r1.OmgUnMonstre();
 	r1.Danger();
