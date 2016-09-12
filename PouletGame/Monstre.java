@@ -1,21 +1,34 @@
-// First try for the little Rekwyn
+// Premier essai du petit Rekwyn
 
-// Monster class
+// Classe monstre
 public class Monstre{
 	String nom;
+	int puissance;
+	int vie;
 	
-	// Monster constructor
+	// Constructeur
 	public Monstre(String xnom){
 		nom = xnom;
 		}
 	
-	// Monster appears method
-	public void MonsterAppears(){
-	String text1 = "Un " + nom + "vient d'apparaître devant vous !";
-	System.out.println(text1);
+	// Apparition d'un monstre 
+	public String OmgUnMonstre(){
+	String text1 = nom;
+	return text1;
 	}
 
-
+	// Apparition du monstre - renard
+	public void Danger(){
+		String text2 = "";
+		if (puissance >= 15){
+			 text2 = "\nFais gaffe a ton cul, il a l'air vnr !!";
+		} 
+		else{
+			 text2 = "\nTu devrais avoir aucun mal a lui casser le cul...";
+		}
+		String text3 = "\nReady, FIGHT !!!";
+		System.out.println(text2 + text3);
+	}
 
 
 
