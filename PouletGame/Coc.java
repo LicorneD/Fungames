@@ -1,14 +1,13 @@
+
 // Classe Coc
 public class Coc extends Personnage{
-	int puissance;
-	int vie;
 
 	
 	//Constructeur
 	public Coc(String pnom){
 		super(pnom);
 		puissance = (int)(Math.random() * (30 - 10) + 10);
-		vie = (int)(Math.random() * (50 - 20) + 20);
+		vie = (int)(Math.random() * (60 - 20) + 20);
 	}
 
 	

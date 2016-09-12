@@ -1,8 +1,7 @@
+
+
 // Classe Poule
 public class Poule extends Personnage{
-	int puissance;
-	int vie;
-
 	
 	//Constructeur
 	public Poule(String pnom){

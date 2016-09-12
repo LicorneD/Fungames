@@ -1,3 +1,4 @@
+
 import java.util.Scanner; 
 
 
@@ -35,6 +36,7 @@ class PouletGame {
 	Coc heros = new Coc(nom);
 	heros.LinkString();
 	}
+	Coc heros = new Coc(nom);
 
 	Renard r1 = new Renard("RenardzerVener");
 	r1.OmgUnMonstre();
@@ -42,9 +44,12 @@ class PouletGame {
 	
 	//PHASE COMBAT
 	
-	System.out.println("Le combat commence !\n\n");
-	while (renard.xpv != 0 || heros.vie != 0){
-		
+	while (r1.vie != 0 && heros.vie != 0){
+		heros.herosattaque(r1, heros);
+		r1.monstreattaque(r1, heros);
 	}
+	
+	r1.WinLose(r1, heros);
+	
    }
 }
