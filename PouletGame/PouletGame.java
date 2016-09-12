@@ -15,5 +15,6 @@ class PouletGame {
 	
 	Personnage heros = new Personnage(sexe, nom);
 	heros.LinkString();
+	// Bite
    }
 }
