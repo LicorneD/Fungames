@@ -18,6 +18,5 @@ public class Poule extends Personnage{
 				System.out.println(text);
 			return text;
 		}
+    }
 	
-	
-}

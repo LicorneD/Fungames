@@ -35,7 +35,14 @@ class PouletGame {
 	Coc heros = new Coc(nom);
 	heros.LinkString();
 	}
-	Monstre renard = new Monstre(10, 10, "Renard");
+	Monstre renard = new Monstre(10, 20, "Renard");
 	renard.MonsterAppears();
+	
+	//PHASE COMBAT
+	
+	System.out.println("Le combat commence !\n\n");
+	while (renard.xpv != 0 || heros.vie != 0){
+		
+	}
    }
 }

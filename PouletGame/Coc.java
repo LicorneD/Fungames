@@ -18,6 +18,5 @@ public class Coc extends Personnage{
 				System.out.println(text);
 			return text;
 		}
+    }
 	
-	
-}
