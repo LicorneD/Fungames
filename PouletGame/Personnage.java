@@ -26,6 +26,7 @@ public class Personnage{
 	
 		public void monstreattaque(Monstre m, Personnage p){
 			p.vie = p.vie - m.puissance;
+			System.out.println(p.vie + "" + m.puissance);
 			if (p.vie < 0){
 				p.vie = 0;
 			}
@@ -33,12 +34,11 @@ public class Personnage{
 	}
 	
 	public void herosattaque(Monstre m, Personnage p){
-		int vie = m.vie - p.puissance;
-		m.vie = vie;
+		m.vie = m.vie - p.puissance;
 		if (m.vie < 0){
 				m.vie = 0;
 			}
-		System.out.println("Vous faites un total de "+p.puissance+ " degats, il reste "+vie+" pv  l'ennemi.\n");
+		System.out.println("Vous faites un total de "+p.puissance+ " degats, il reste "+m.vie+" pv a l'ennemi.\n");
 	}
 	
 		public void WinLose(Monstre m, Personnage p){

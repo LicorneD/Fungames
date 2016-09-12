@@ -32,12 +32,11 @@ public class Monstre{
 	}
 	
 	public void herosattaque(Monstre m, Personnage p){
-		int vie = m.vie - p.puissance;
-		m.vie = vie;
+		m.vie = m.vie - p.puissance;
 		if (m.vie < 0){
 				m.vie = 0;
 			}
-		System.out.println("Vous faites un total de "+p.puissance+ " degats, il reste "+vie+" pv a l'ennemi.\n");
+		System.out.println("Vous faites un total de "+p.puissance+ " degats, il reste "+m.vie+" pv a l'ennemi.\n");
 	}
 	
 		public void monstreattaque(Monstre m, Personnage p){

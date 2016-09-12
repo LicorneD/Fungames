@@ -44,10 +44,10 @@ class PouletGame {
 	
 	//PHASE COMBAT
 	
-	while (r1.vie != 0 && heros.vie != 0){
-		heros.herosattaque(r1, heros);
-		r1.monstreattaque(r1, heros);
-	}
+	//while (r1.vie != 0 && heros.vie != 0){
+		//r1.herosattaque(r1, heros);
+		heros.monstreattaque(r1, heros);
+	//}
 	
 	r1.WinLose(r1, heros);
 	
