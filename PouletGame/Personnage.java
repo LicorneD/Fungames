@@ -13,7 +13,7 @@ public class Personnage{
 	
 	public String LinkString(){
 		String text = "";
-				text = "Tu t'appelles donc " + nom;	
+				text = "\nAinsi, c'est toi " + nom + " !\n";	
 			return text;
 		}
 		

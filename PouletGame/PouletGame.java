@@ -6,8 +6,8 @@ class PouletGame {
    public static void main (String[] args){
 	String sexe = "H";
 	int type;
-    System.out.println("Welcome in PouletGame !\n\n");
-	System.out.println("Homme(H) ou Femme(F) ?");
+    System.out.println("\nBienvenue dans le monde de PouletGame !\n\nIncarnez une poule ou un coq, et detruisez vos ennemis !\nBonne chance, brave paysan, aventure et gloire vous attendent !\n\n");
+	System.out.println("Etes-vous un Homme(H) ou une Femme(F) ?");
 
 	Scanner sc2 = new Scanner(System.in); 
 	sexe = sc2.next();
@@ -23,8 +23,7 @@ class PouletGame {
 	else{
 		type = 2;
 	}
-	
-	System.out.println("Quel est votre nom de personnage ?");
+	System.out.println("\nComment souhaitez-vous vous appeler ?");
 	Scanner sc1 = new Scanner(System.in); 
 	String nom = sc1.next();
 	
@@ -37,8 +36,10 @@ class PouletGame {
 	heros.LinkString();
 	}
 	Coc heros = new Coc(nom);
-
-	Renard r1 = new Renard("RenardzerVener");
+	System.out.println("\nCe nom convient tres bien pour aller botter les fesses de tes adversaires !");
+	
+	System.out.println("Ton premier combat est sur le point de commencer !\nUn renard tout pourri veut ta mort, defends-toi !");
+	Renard r1 = new Renard("Renard fripon");
 	r1.OmgUnMonstre();
 	r1.Danger();
 	

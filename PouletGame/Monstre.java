@@ -20,15 +20,12 @@ public class Monstre{
 
 	// Apparition du monstre - renard
 	public void Danger(){
-		String text2 = "";
-		if (puissance >= 15){
-			 text2 = "\nFais gaffe a ton cul, il a l'air vnr !!";
-		} 
-		else{
-			 text2 = "\nTu devrais avoir aucun mal a lui casser le cul...";
-		}
-		String text3 = "\nReady, FIGHT !!!";
+		String text2 = "\nReady, FIGHT !!!\n";
+		String text3 = "\nChargement du combat...\n";
 		System.out.println(text2 + text3);
+		try{
+			Thread.sleep(3000);
+			}catch(InterruptedException e){}
 	}
 	
 	public void herosattaque(Monstre m, Personnage p){
