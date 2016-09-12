@@ -35,8 +35,10 @@ class PouletGame {
 	Coc heros = new Coc(nom);
 	heros.LinkString();
 	}
-	Monstre renard = new Monstre(10, 20, "Renard");
-	renard.MonsterAppears();
+<<<<<<< HEAD
+	Renard r1 = new Renard("RenardzerVener");
+	r1.OmgUnMonstre();
+	r1.Danger();
 	
 	//PHASE COMBAT
 	
