@@ -1,26 +1,16 @@
 // Classe Personnage
 public class Personnage{
-	int sexe;
 	String nom;
 
 	
 	//Constructeur
-	public Personnage(int psexe, String pnom){
-		sexe = psexe;
+	public Personnage(String pnom){
 		nom = pnom;
 	}
-
 	
-	public void LinkString(){
+	public String LinkString(){
 		String text = "";
-			if (sexe >= 1){
-				text = "Je m'appelle " + nom + " et je suis un homme."; 	
-			}
-			else {
-				text = "Je m'appelle " + nom + " et je suis une femme."; 
-			}
-			System.out.println(text);
+				text = "Tu t'appelles donc " + nom;	
+			return text;
 		}
-	
-	
 }
