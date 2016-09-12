@@ -13,7 +13,7 @@ public class Coc extends Personnage{
 	
 	public String LinkString(){
 		String text = "";
-				text = super.LinkString() + ", tu es un coc ayant " + puissance + " de puissance et " + vie + " pv";	
+				text = super.LinkString() + "Tu es donc un coc ayant " + puissance + " de puissance et " + vie + " pv, felicitations !";	
 				System.out.println(text);
 			return text;
 		}

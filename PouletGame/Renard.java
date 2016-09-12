@@ -13,7 +13,7 @@ public class Renard extends Monstre{
 	}
 
 	public String OmgUnMonstre(){
-	String text1 = super.OmgUnMonstre() + " est apparu devant vous, c'est un renard de puissance de " + puissance + "et avec" + vie + "pv";
+	String text1 = "\n" + super.OmgUnMonstre() + " est apparu devant vous, il dispose de " + puissance + " puissance et " + vie + " pv";
 	System.out.println(text1);
 	return text1;
 	}
